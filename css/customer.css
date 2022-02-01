@@ -1,0 +1,122 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+#topBanner{width: calc(100% - 50px); margin: 0 auto; height: 320px; background-image: url(../img/customer/bg.jpg);
+    background-size: cover; background-position: 50% 50%;}
+#topBanner .wrap{width: 1200px; margin: 0 auto; padding: 0 10px;}
+#topBanner .wrap h3{
+    text-align: center; color: #fff;font-size: 24px; font-weight: bold; text-shadow: 1px 4px 4px rgba(0,0,0,0.6);
+    line-height: 320px;
+}
+
+.guide{width: 1200px; margin: 0 auto; padding: 0 10px; margin-top: 20px; display: flex; justify-content: flex-end; align-items: center;}
+.guide a{font-size: 17px; color: #777;}
+ion-icon {font-size: 15px;}
+.guide a span{color: #555; font-weight: bold;}
+
+#infoToCustomer{width: 1200px; margin: 0 auto; padding: 100px 10px 30px;}
+#infoToCustomer .title{padding-bottom: 60px;}
+#infoToCustomer .title h3{font-size: 23px; padding-bottom: 20px; color: #333;}
+#infoToCustomer .title h4{font-size: 18px; color: #333; padding-top: 20px;}
+#infoToCustomer .title p{padding-top: 20px; color: #333; font-size: 14px;}
+#infoToCustomer .bottom_cont{display: flex; align-items: center; justify-content: space-between;}
+#infoToCustomer .bottom_cont p{font-weight: bold;font-size: 14px;}
+#infoToCustomer .bottom_cont button{
+    width: 160px; height: 40px; display: flex; align-items: center; justify-content: center;
+    background: #f47321; color: #fff; border: none; margin-top: 20px; cursor: pointer;
+}
+#infoToCustomer .cont{padding-bottom: 50px; display: flex; padding-top: 20px;}
+#infoToCustomer .cont .box{
+    width: calc(100% / 3 - 10px); margin: 0 5px; border: 1px solid #ddd;
+    padding: 30px 20px; display: flex; justify-content: space-between; align-items: center; cursor: pointer;
+}
+#infoToCustomer .cont .box .left p{font-size: 14px;}
+#infoToCustomer .cont .box .left h1{font-size: 30px; font-weight: lighter; color: #333; padding-top: 5px;}
+
+#threeStep{width: 1200px; margin: 0 auto; padding: 0 10px; display: flex; justify-content: space-between;}
+#threeStep .arrow{display: flex; width: calc(100% / 3);}
+#threeStep .arrow .button{
+    display: flex; width: 100%; align-items: center; justify-content: center;
+    background: #f47321; color: #e7e7e7; font-family: 'Nanum Gothic', sans-serif;
+    font-size: 14px;
+}
+#threeStep .arrow:nth-child(2) .button{background: #e7e7e7; color: #f47321;}
+#threeStep .arrow:nth-child(3) .button{background: #e7e7e7; color: #f47321;}
+
+#agree{width: 1200px; margin: 0 auto; padding: 50px 10px 0 10px;}
+#agree h2{font-size: 20px; font-weight: lighter; color: #333;}
+#agree p{font-size: 15px; color: #333; padding: 40px 0;}
+
+#agree .box{height: 400px;overflow-y: scroll;background: #e7e7e7;padding: 20px; color: #444;}
+#agree .checked{display: flex; justify-content: flex-end;}
+#agree .checked p{padding-right: 10px;}
+
+#certification{width: 1200px; margin: 0 auto; padding: 0px 10px 50px 10pxs;}
+#certification h2{font-size: 20px; font-weight: lighter; color: #333;}
+#certification p{font-size: 15px; color: #333; padding: 40px 0;}
+
+#certification .iPin{
+    display: flex; justify-content: space-between; border: 1px solid #f47321;
+    padding: 0 30px; align-items: center;
+}
+#certification .iPin .left{display: flex; align-items: center; justify-content: center;}
+#certification .iPin .left img{display: block; margin-right: 20px;}
+#certification .iPin .left p{line-height: 25px; font-size: 15px;}
+#certification .iPin .right button{width: 130px; height: 30px; background: #f47321; border: none; color: #fff; cursor: pointer;}
+#certification .BtnSec{padding: 40px 0;}
+#certification .BtnSec > ul{display: flex; align-items: center; justify-content: center;}
+#certification .BtnSec > ul > li{padding: 0 10px;}
+#certification .BtnSec > ul > li > button{
+    width: 180px; height: 50px; border: none; background: #f47321;
+    cursor: pointer;  color: #fff; font-size: 17px;
+}
+#certification .BtnSec > ul > li:last-child > button{background: #555;}
+
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+    #topBanner{width: 100%;} 
+    #topBanner .wrap{width: 100%;}
+    .guide{width: 100%; padding: 0 40px;}
+    #infoToCustomer{width: 100%; padding: 50px 40px 0 40px;}
+    #infoToCustomer .cont .box .left h1{font-size: 17px;}
+    #threeStep{width: 100%; padding: 0 40px;}
+    #agree{width: 100%; padding: 50px 40px;}
+    #certification{width: 100%; padding: 0 40px;}
+    #certification .iPin .left{display: block;}
+    #certification .iPin .left img{margin-top: 20px;}
+    #certification .iPin .right button{margin-top: 100px;}
+    #certification .BtnSec > ul > li > button{margin-bottom: 50px;}
+}
+@media(max-width : 767px){ /* 모바일 사이즈 768px */
+    .guide{width: 100%; padding: 0 20px;}
+    #infoToCustomer{width: 100%; padding: 50px 20px 0 20px;}
+    #threeStep{width: 100%; padding: 0 20px;}
+    #infoToCustomer .cont .box{display: block;}
+    #infoToCustomer .cont .box .left{text-align: center;}
+    #infoToCustomer .cont .box .right{text-align: right; margin-top: 20px;}
+    #infoToCustomer .cont .box:first-child .right{display: none;} 
+    #threeStep{width: 100%;}
+    #threeStep .arrow{width: 100%; height: 50px;}
+    #threeStep .arrow img{display: none;}
+    #threeStep .arrow:nth-child(2){width: 100%;}
+    #threeStep .arrow:nth-child(2){display: none;}
+    #threeStep .arrow:nth-child(3){display: none;}
+    #agree{padding: 50px 20px;}
+    #agree .checked{justify-content: flex-start;}
+    #certification{width: 100%; padding: 0 20px;}
+    #certification .iPin{flex-direction: column; justify-content: space-between; align-items: center;}
+    #certification .iPin .left{justify-content: center; display: flex; flex-direction: column;}
+    #certification .iPin .right{margin-bottom: 30px;}
+    #certification .iPin .right button{margin: 0;}
+    #certification .BtnSec > ul > li > button{
+        width: 250px;
+    }
+}

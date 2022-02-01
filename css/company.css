@@ -1,0 +1,98 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+#topBanner{width: calc(100% - 50px); margin: 0 auto; height: 320px; background-image: url(../img/info/bg.jpg);
+    background-size: cover; background-position: 50% 50%;}
+#topBanner .wrap{width: 1200px; margin: 0 auto; padding: 0 10px;}
+#topBanner .wrap h3{
+    text-align: center; color: #fff;font-size: 24px; font-weight: bold; text-shadow: 1px 4px 4px rgba(0,0,0,0.6);
+    line-height: 320px;
+}
+
+.guide{width: 1200px; margin: 0 auto; padding: 0 10px; margin-top: 20px; display: flex; justify-content: flex-end; align-items: center;}
+.guide a{font-size: 17px; color: #777;}
+ion-icon {font-size: 15px;}
+.guide a span{color: #555; font-weight: bold;}
+
+#vision{width: 1200px;margin: 0 auto; padding: 100px 10px;}
+#vision .toptxt{text-align: center; padding-bottom: 80px;}
+#vision .toptxt h3{font-size: 20px; color: #333; font-weight: bold;}
+#vision .toptxt h1{font-size: 60px; color: #f47321; font-weight: normal;}
+#vision .bottomtxt{}
+#vision .bottomtxt li{padding-top: 25px;}
+#vision .bottomtxt .title{font-size: 16px; font-weight: bold;}
+#vision .bottomtxt .content{font-size: 15px; color: #555;}
+
+#management{width: 1200px; margin: 0 auto; padding: 0 10px;}
+#management .title h3{font-size: 24px;}
+#management .title img{display: block; padding-top: 15px;}
+#management #idea{
+    margin: 50px 0; display: flex; width: 100%;
+    background-repeat: no-repeat;
+    height: 500px; padding-top: 100px; background-image: url(../img/info/img.png);
+}
+#management #idea li{
+    display: flex; width: calc(100% / 3); padding: 50px 60px;
+    flex-direction: column; text-align: center;
+    align-items: center;
+}
+#management #idea li h3{font-size: 30px; color: #333; padding-bottom: 15px;}
+#management #idea li p.sub{font-size: 16px; font-weight: bold; color: #000; padding-bottom: 10px;}
+#management #idea li p.cont{font-size: 14px; font-weight: normal; color: #777; line-height: 20px;}
+
+
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+    #topBanner{width:100%;}
+    #topBanner .wrap{width: 100%} 
+    .guide{width: 100%;}
+    #vision{width: 100%; padding: 100px 40px;}
+    #management{width: auto;}
+    #management .title{padding: 0 30px;}
+    #management #idea{ 
+        width: 100%; background-position: 50% 50%; 
+        background-image: none; margin: 0;
+    }
+    #management #idea li{display: flex; justify-content: center; align-items: center;  padding: 40px 20px;}
+  
+    #management #idea li:first-child{
+        height: 50%; background: url(../img/info/img01.png) no-repeat left center;
+        background-size: 100%; position: relative;left: 30px;
+    }
+    #management #idea li:nth-child(2){
+        height: 50%; background: url(../img/info/img02.png) no-repeat left center;
+        background-size: 100%;position: relative;
+        z-index: 99;
+    }
+    #management #idea li:nth-child(3){
+        height: 50%; background: url(../img/info/img03.png) no-repeat left center;
+        background-size: 100%; position: relative;right: 30px;
+    }
+    #management #idea li h3{font-size: 25px; padding-bottom: 5px;}
+    #management #idea li p.sub{font-size: 13px;}
+    #management #idea li p.cont{position: absolute; bottom: -30px; padding: 0 20px; height: 10px;}
+  
+ 
+    
+
+}
+@media(max-width : 767px){ /* 모바일 사이즈 768px */
+    #management #idea li{width: 100%; }
+    #management #idea{
+        flex-direction: column; justify-content: center;
+        align-items: center; padding: 500px 30px 600px 30px ;
+    }
+    #management #idea li:first-child{position: static; height: 100%; padding: 150px 100px;}
+    #management #idea li:nth-child(2){position: static; padding: 150px 100px;}
+    #management #idea li:nth-child(3){position: static;  padding: 150px 100px;}
+    #management #idea li p.cont{position: static;}
+}

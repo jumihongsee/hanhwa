@@ -1,0 +1,118 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+#topBanner{ width: calc(100% - 50px); margin: 0 auto; height: 320px; background-image: url(../img/business/bg.jpg);
+    background-size: cover; background-position: 50% 50%;position: relative;}
+#topBanner .wrap{
+    width: 1200px; margin: 0 auto; padding: 0 10px; height: 200px;
+    position: absolute; background: #f47321; bottom: -120px;
+    left: 50%; transform: translateX(-50%); display: flex; color: #fff;
+    flex-direction: column; align-items: center; justify-content: center;
+}
+#topBanner .wrap img{display: block; padding-bottom: 10px;}
+#topBanner .wrap h3{display: block; font-size: 30px; font-weight: normal; padding-bottom: 10px;}
+
+.guide{width: 1200px; margin: 0 auto; padding: 120px 10px 100px 10px; margin-top: 20px; display: flex; justify-content: flex-end; align-items: center;}
+.guide a{font-size: 17px; color: #777;}
+ion-icon {font-size: 15px;}
+.guide a span{color: #555; font-weight: bold;}
+
+#middle_txt{ width: 1200px; margin: 0 auto; padding: 0 180px 100px 180px; text-align: center;}
+#middle_txt p{font-size: 14px; line-height: 25px;}
+
+#project{width: 1180px; margin: 0 auto; overflow: hidden; position: relative;}
+#project .title h3{font-size: 24px;}
+#project .title img{display: block; padding-top: 15px;}
+#project #pjBanner{
+    margin: 40px 0; height: 560px; border-bottom: 1px solid #f47321;
+    display: flex; flex-wrap: wrap;  width: 200%;  margin-left: -100%; 
+}
+
+#project #pjBanner > li{width: 50%;}
+#project #pjBanner .img_section{height: 480px;}
+#project #pjBanner .img_section > img{display: block; width: 100%; height: 100%;}
+
+#project #pjBanner .txt_section{padding: 19px 0 20px; display: flex; justify-content: space-between; align-items: center;} 
+#project #pjBanner .txt_section ul{display: flex; align-items: center; } 
+#project #pjBanner .txt_section ul > li{font-family: 'Nanum Gothic', sans-serif; padding: 0 10px; font-weight: bold;} 
+#project #pjBanner .txt_section ul > .bottom{display: none;}
+#project #pjBanner .txt_section ul > li.title{font-size: 24px; font-weight: bold; padding-left: 0;}
+#project #pjBanner .txt_section ul > li > span{font-weight: normal; padding-left: 5px;}
+
+#project #pjBanner .txt_section .moreBtn{
+    width: 160px; height: 40px; background: #f47321;
+    padding: 10px; text-align: center; color: #fff;
+}
+#project #pjBanner .slideBtn{}
+#project #pjBanner .slideBtn > li:first-child{position: absolute; top: 50%; left: 0; transform: translateY(-50%);}
+#project #pjBanner .slideBtn > li:last-child{position: absolute; top: 50%; right: 0; transform: translateY(-50%);}
+
+#facility{}
+#facility .wrap{width: 1200px; margin: 0 auto; padding: 20px 10px 100px 10px;}
+#facility .wrap .cont{
+    display: flex; justify-content: space-between; align-items: center;
+    flex-wrap: wrap;
+}
+#facility .wrap .cont .box{
+    width: calc(100% / 3 - 20px); margin: 10px; height: 300px; position: relative;
+    background: #fff; border: 1px solid #ccc; padding:10px;
+    border-radius: 20px; background-size: cover; background-position: 50% 50%;
+}
+#facility .wrap .cont .box .title{
+    font-size: 30px; color: #f47321; border-bottom: 1px solid #ccc;
+    padding: 15px; 
+}
+#facility .wrap .cont .box .title span{font-size: 25px;padding-left: 80px;}
+#facility .wrap .cont .box:nth-child(3) .title span{padding-left: 60px;}
+#facility .wrap .cont .box:nth-child(4) .title span{padding-left: 60px;}
+#facility .wrap .cont .box p.sub{
+    padding: 20px 80px; font-size: 14px; color: #333; text-align: center;
+}
+
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+    #topBanner{ width: 100%}
+    #topBanner .wrap{width: calc(100% - 100px);}
+    .guide{width: calc(100% - 100px);}
+    #middle_txt{ width: 100%}
+    #project{width: calc(100% - 100px);}
+    #project #pjBanner{ height: 510px;}
+    #project #pjBanner .img_section{height: 430px;}
+    #project #pjBanner .txt_section {padding-top: 28px;}
+    #project #pjBanner .txt_section .moreBtn{position: absolute; right: 0; bottom: 105px;}
+    #facility .wrap{width: calc(100% - 100px);  padding: 20px 0px 100px 0px;}
+    #facility .wrap .cont .box{width: calc(100% / 2 - 20px);}
+}
+@media(max-width : 767px){ /* 모바일 사이즈 1024px  */
+    #topBanner .wrap{width: calc(100% - 80px);}
+    .guide{width: calc(100% - 80px);}
+    #middle_txt{ width: 100%}
+    #middle_txt{margin: 0 auto; padding: 0 40px 100px 40px; text-align: center;}  
+    #project{width: calc(100% - 80px);}
+    #project #pjBanner{ height: 500px;}
+    #project #pjBanner .img_section{height: 330px; flex-direction: column;}
+    #project #pjBanner .txt_section {flex-direction: column;} 
+    #project #pjBanner .txt_section ul{flex-direction: column;}
+    #project #pjBanner .txt_section ul li.none{display: none;}
+    #project #pjBanner .txt_section ul > .bottom{display: block; display: flex; align-items: center;}
+    #project #pjBanner .txt_section ul > .bottom > li{font-family: 'Nanum Gothic', sans-serif;font-weight: bold; padding: 10px 10px 20px 10px;}
+    #project #pjBanner .txt_section ul > .bottom > li > span{font-weight: normal; padding-left: 5px;}
+    #project #pjBanner .txt_section .moreBtn{position: static;}
+
+    #project #pjBanner .slideBtn > li:first-child{position: absolute; top: 50%; left: 0; transform: translateY(-120%);}
+    #project #pjBanner .slideBtn > li:last-child{position: absolute; top: 50%; right: 0; transform: translateY(-120%);}
+
+    #facility .wrap{padding: 0px 10px 100px 10px;}
+    #facility .wrap .cont .box{width: 100%;}
+    #facility .wrap .cont .box .title span{font-size: 25px;padding-left: 180px;}
+    #facility .wrap .cont .box:nth-child(3) .title span{padding-left: 150px;}
+    #facility .wrap .cont .box:nth-child(4) .title span{padding-left: 150px;}
+}

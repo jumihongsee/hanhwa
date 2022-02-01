@@ -1,0 +1,335 @@
+@charset "utf-8";
+
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+/***********  MAIN slider  *************/
+main{width: 100%; margin: 0 auto;}
+main .banner{
+    height: 810px;  width: 100%; overflow: hidden; 
+    z-index: 2;  position: relative;
+}
+
+main .banner ul{ 
+    height: 100%; display: flex; width: 400%; margin-left: -100%;
+   
+}
+main .banner ul li{
+    background-size: cover; background-position: 50% 50%;
+    width: 25%; height: 100%;
+}
+main .banner ul li.main_slide1{background-image: url(../img/main_slide01.jpg);}
+main .banner ul li.main_slide2{background-image: url(../img/main_slide02.jpg);}
+main .banner ul li.main_slide3{background-image: url(../img/main_slide03.jpg);}
+main .banner ul li.main_slide4{background-image: url(../img/main_slide04.jpg);}
+
+main .banner ul li .txtPart{
+    width: 1200px; margin: 0 auto; padding: 300px 10px;
+    color: #fff; height: 500px; 
+}
+
+main .banner ul li .txtPart .title{font-size: 60px; font-weight: normal;}
+main .banner ul li .txtPart h3 span{
+    font-size: 25px; font-weight: lighter; display: block;
+
+}
+main .banner ul li.main_slide2 .txtPart h3 span{
+    font-size: 25px; font-weight: lighter; display: inline-block;
+}
+main .banner ul li .txtPart h2{font-size: 80px; font-weight: normal;}
+main .banner ul li .txtPart .content{
+    font-size: 16px; padding: 10px 0; width: 490px;
+    font-weight: lighter;
+}
+main .banner ul li .txtPart button{
+    width: 150px; height: 40px; margin-top: 10px;
+    border: 1px solid #fff; background: transparent;
+    color: #fff; cursor: pointer;
+}
+main .banner ul li .txtPart button:hover{
+    background: rgba(255,255,255,0.4);
+}
+main .banner .bBtn{
+  
+    position: absolute; 
+    bottom: 13%; left: 50%;
+    transform: translateX(-50%);  z-index: 4;
+}
+main .banner .bBtn > ul{display: flex; }
+main .banner .bBtn > ul > li{}
+main .banner .bBtn > ul > li > a{display: block; height: 15px; width: 15px;}
+
+
+
+/************* Section1. ourBusiness ***************/
+main .bannerBottomImg{
+    width: 1200px; margin: 0 auto;
+    display: flex; justify-content: center;
+    align-items: center; flex-wrap: wrap;
+}
+main .bannerBottomImg img{display: block; height: 80px;}
+
+main #ourBusiness{
+    width: 1200px; margin: 0 auto; padding: 60px 10px 80px;
+} 
+main #ourBusiness .title_txt{
+    color: #555; text-align: center; 
+    padding-bottom: 70px;
+}
+main #ourBusiness .title_txt h3{font-size: 50px; font-weight: normal;}
+main #ourBusiness .title_txt p{font-size: 14px;}
+
+main #ourBusiness .box{display: flex; flex-wrap: wrap;}
+main #ourBusiness .box .box_section{width: calc(25% - 20px); margin: 0 10px;}
+main #ourBusiness .box .box_section .top{cursor: pointer; display: flex; justify-content: center; align-items: center; height: 190px; }
+main #ourBusiness .box .box_section .top img{display: block; padding: 10px 0 25px;}
+main #ourBusiness .box .box_section .bottom{height: 140px;}
+main #ourBusiness .box .box_section .bottom p{font-size: 13px;}
+
+/************** Section2. moreView **************/
+main #moreView{width: 100%; height: 430px;}
+main #moreView .box{display: flex; width: 100%; height: 100%;flex-wrap: wrap;}
+main #moreView .box .cont{
+    width: calc(100% / 3); cursor: pointer;
+    height: 100%; background-size: cover; background-position: 50% 50%;
+}
+main #moreView .box .cont .dark{
+    width: 100%; height: 100%; background: rgba(0,0,0,0.4);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; opacity: 0;
+    transition: opacity 0.5s;
+}
+
+main #moreView .box .cont:hover .dark{opacity: 1;}
+main #moreView .box .cont .dark img{display: block; width: 60px; height: 60px;}
+main #moreView .box .cont .dark p{font-size: 18px; color: #f47321;}
+
+/************** Section3. hanwhaStory **************/
+
+main #hanwhaStory{
+    width: 1200px; margin: 0 auto; padding: 75px 10px;
+}
+main #hanwhaStory .title_txt{    
+    color: #555; text-align: center; 
+    padding-bottom: 70px;
+}
+main #hanwhaStory .title_txt h3{font-size: 50px; font-weight: normal;}
+main #hanwhaStory .title_txt p{font-size: 14px;}
+main #hanwhaStory .box{display: flex;}
+main #hanwhaStory .box .cont{
+    width: calc(100% / 3 - 20px); margin: 0 10px;
+}
+main #hanwhaStory .box .cont .topSection{
+    width: 100%;
+    display: flex; align-items: center; justify-content: center;
+}
+main #hanwhaStory .box .cont .topSection img{display: block; width: 100%; height: 220px;}
+main #hanwhaStory .box .cont .bottomSection{padding-top: 10px;}
+main #hanwhaStory .box .cont .bottomSection h5{
+    width: 100%; font-size: 16px;
+}
+main #hanwhaStory .box .cont .bottomSection p{
+    font-size: 14px; padding-top: 10px;
+}
+
+/************** Section4. middle **************/
+
+main #middle{
+    width: 100%; height: 300px; background-image: url(../img/banner_img.jpg);
+    background-size: cover; background-position: 50% 50%;
+    display: flex; align-items: center;
+    justify-content: center; flex-direction: column;
+}
+main #middle .logo{height: 45px; margin-bottom: 15px;}
+main #middle .logo img{display: block;}
+main #middle h3{font-size: 30px; color: #fff; font-weight: lighter;}
+main #middle button{
+    width: 125px; height: 35px;
+    border: 1px solid #fff; font-size: 14px; color: #fff;
+    background: transparent; margin-top: 20px; cursor: pointer;
+}
+main #middle button:hover{
+    background: rgba(255,255,255,0.5);
+}
+
+/************** Section4. bottom **************/
+main #bottom{
+    width: 1200px; margin: 0 auto; padding: 110px 10px;
+}
+main #bottom .box{display: flex; flex-wrap: wrap;}
+main #bottom .box .cont{
+    width: calc(100% / 3 - 30px); margin: 0 15px;
+    cursor: pointer;
+}
+main #bottom .box .cont .topBox{
+    width: 100%; height: 240px; 
+}
+
+main #bottom .box .cont.social{
+    position: relative;
+}
+main #bottom .box .cont.social .topBox .contBar{
+    padding-left: 30px;
+}
+main #bottom .box .cont.social .topBox .contBar > img{
+    display: block; padding: 45px 0 20px
+}
+
+main #bottom .box .cont.social .topBox .contBar .txtPart{color: #fff;}
+main #bottom .box .cont.social .topBox .contBar .txtPart .title{font-size: 22px; font-weight: lighter; margin-bottom: 5px;}
+main #bottom .box .cont.social .topBox .contBar .txtPart .sub{font-size: 14px; padding-bottom: 65px;}
+main #bottom .box .cont.social .topBox .contBar .txtPart  p.sub2{font-size: 14px; width: 200px;}
+main #bottom .box .cont.social .topBox .contBar h3{font-size: 22px; font-weight: lighter;}
+main #bottom .box .cont.social .topBox .contBar .rightSection{
+    position: absolute; right: 20px; top: 20px;}
+main #bottom .box .cont.social .topBox .contBar .rightSection img{display: block;}
+main #bottom .box .cont.social .topBox{    
+    width: 100%; height: 240px; background: #f47321;
+}
+
+main #bottom .box .cont.information .topBox{
+    display: flex; justify-content: space-between; 
+    align-items: center; padding: 0 25px; text-align: center;
+}
+main #bottom .box .cont.information .topBox .left_section{
+    display: flex;justify-content: center; align-items: center;
+    flex-direction: column;
+}
+main #bottom .box .cont.information .topBox .right_section{
+    display: flex;justify-content: center; align-items: center;
+    flex-direction: column;
+}
+main #bottom .box .cont.information .topBox h3{
+    font-size: 22px; color: #333; margin: 15px 0 5px;
+}
+main #bottom .box .cont.information .topBox p{font-size: 13px; color: #888;}
+main #bottom .box .cont.information .topBox img{display: block;}
+
+main #bottom .box .cont.people .topBox{
+    background-image: url(../img/career_img.jpg);
+    background-size: cover; background-position: 50% 50%;
+    padding-left: 30px;
+}
+main #bottom .box .cont.people .topBox .txtPart{color: #fff;}
+main #bottom .box .cont.people .topBox .txtPart .title{font-size: 22px; font-weight: lighter; margin-bottom: 5px;}
+main #bottom .box .cont.people .topBox .txtPart .sub{font-size: 14px; padding-bottom: 65px;}
+main #bottom .box .cont.people .topBox > img{display: block; padding: 45px 0 20px;}
+
+
+main #bottom .box .cont .bottomBox{
+    width: 100%; height: 50px; border: 1px solid #888; margin-top: 30px;
+    position: relative;
+}
+main #bottom .box .cont .bottomBox h3{
+    text-align: center; line-height: 50px;
+    font-size: 18px; font-weight: lighter;
+}
+main #bottom .box .cont .bottomBox .more{
+    position: absolute; cursor: pointer;
+    right: 15px; top: 50%; transform: translateY(-50%);
+}
+main #bottom .box .cont .bottomBox .more img{display: block;} 
+main #bottom .box .cont:nth-child(4) {display: none;}
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+
+    main .banner{height: 700px;}
+    main .banner ul li .txtPart{width: 100%; padding: 250px 30px;}
+
+    main .bannerBottomImg{width: 100%;}
+    main #ourBusiness{width: 100%; padding: 60px 30px 80px;}
+    main #ourBusiness .box .box_section{width: calc(50% - 30px);  margin: 0 15px;}
+
+    main #moreView{width: 100%; height: 270px;}
+
+    main #hanwhaStory{width: 100%; padding: 75px 25px;}
+    main #hanwhaStory .box .cont{
+        width: calc(100% / 3 - 20px); margin: 0 10px;
+    }
+    main #hanwhaStory .box .cont .topSection img{height: 180px;}
+    main #hanwhaStory .box .cont .bottomSection h5{font-size: 14px; width: 100%; padding-top: 10px;}
+
+    main #bottom{width: 100%; padding: 110px 30px;}
+    main #bottom .box .cont{
+        width: calc(100% / 2 - 30px);}
+    main #bottom .box .cont:nth-child(3) {padding-top: 20px;}
+    main #bottom .box .cont:nth-child(4) {display: block; padding-top: 20px;}
+    main #bottom .box .cont > .bottomBox{display: none;}
+}
+
+@media(max-width : 767px){ /* 모바일 사이즈 768px */
+    
+    main .banner{height: 600px;}
+    main .banner ul li .txtPart{width: 100%; padding: 200px 40px;}
+    main .banner ul li .txtPart .title{font-size: 50px;}
+    main .banner ul li .txtPart h3 span{font-size: 20px;}
+    main .banner ul li.main_slide2 .txtPart h3 span{font-size: 18px;}
+    main .banner ul li.main_slide2 .txtPart h2{font-size: 35px;}
+
+    main #ourBusiness{width: 100%; padding: 60px 20px 80px;}
+    main #ourBusiness .box .box_section{width: calc(100% - 20px); margin: 0 10px;}
+    main #ourBusiness .title_txt h3{font-size: 35px; padding-bottom: 5px;}
+    main #ourBusiness .title_txt p{font-size: 13px;}
+    main #ourBusiness .title_txt{padding-bottom: 30px;}
+    main #ourBusiness .box .box_section .bottom{height: 80px;}
+
+    main #moreView .box .cont{width: 50%; height: 200px;}
+    main #moreView .box .cont:last-child{display: none;}
+    main #moreView .box .cont .dark img{display: block; width: 30px; height: 30px;}
+
+    main #hanwhaStory{padding: 0 10px 50px;}
+    main #hanwhaStory .title_txt{padding-bottom: 40px;}
+    main #hanwhaStory .title_txt h3{font-size: 35px; padding-bottom: 5px;}
+    main #hanwhaStory .title_txt p{font-size: 13px;}
+    main #hanwhaStory .box .cont{width: 50%;}
+    main #hanwhaStory .box .cont:last-child{display: none;}
+    main #hanwhaStory .box .cont .topSection img{height: 130px;}
+    main #hanwhaStory .box .cont .bottomSection h5{font-size: 13px; font-weight: normal;}
+    main #hanwhaStory .box .cont .bottomSection p{display: none;}
+
+    main #middle{width: 100%; height: 200px; }
+    main #middle h3{font-size: 20px}
+
+    main #bottom{padding: 60px 20px;}
+    main #bottom .box .cont{width: 50%; margin: 0;}
+    main #bottom .box .cont:nth-child(1){}
+    main #bottom .box .cont:first-child .topBox .contBar .rightSection img{display: none;}
+    main #bottom .box .cont:first-child .topBox .contBar .txtPart  p.sub2{display: none;}
+
+    main #bottom .box .cont:nth-child(2){}
+    main #bottom .box .cont:nth-child(3){width: 100%; padding-top: 0;}
+    main #bottom .box .cont:nth-child(4){width: 100%; padding-top: 0;}
+  
+    
+
+
+    main #bottom .box .cont.social .topBox{height: 180px; }
+    main #bottom .box .cont.social .topBox .contBar .txtPart .title{font-size: 19px;}
+    main #bottom .box .cont.social .topBox .contBar > img{padding: 35px 0 10px;}
+
+    main #bottom .box .cont.people .topBox{height: 180px; } 
+    main #bottom .box .cont.people .topBox .txtPart .title{font-size: 19px;}
+    main #bottom .box .cont.people .topBox > img{padding: 35px 0 10px;}
+    main #bottom .box .cont.people .topBox{background-image: none;}
+    main #bottom .box .cont.people{background: #82a5ae;}
+
+    main #bottom .box .cont.information{width: 100%;}
+    main #bottom .box .cont.information .topBox{display: flex;  justify-content: space-around; padding-left: 0;}
+    main #bottom .box .cont.information .topBox > div h3{padding-top: 20px;}
+    main #bottom .box .cont.information .topBox > div p{font-size: 14px;}
+    main #bottom .box .cont.information .topBox > div.left_section{
+        display: flex; align-items: center; justify-content: center; flex-direction: column;width: 50%;
+    }
+    main #bottom .box .cont.information .topBox > div.right_section{
+        display: flex; align-items: center; justify-content: center; flex-direction: column; width: 50%;
+    }
+
+    main #bottom .box .cont .bottomBox{margin-top: 15px;}
+
+}

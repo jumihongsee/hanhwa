@@ -1,0 +1,291 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+*{box-sizing: border-box; font-family: 'Open Sans', sans-serif;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+/***********  HEADER & regularNav  *************/
+
+.regularNav {width: 1200px; margin: 0 auto; padding: 0 10px;
+    height: 90px; z-index: 3; position: relative;
+}
+
+.regularNav header {
+    display: flex; justify-content: space-between;
+    width: 100%; height: 100%;
+}
+.regularNav header .logoSection{padding:20px 0;}
+.regularNav header .logoSection img{display: block; height: 50px;}
+
+.regularNav header nav{}
+.regularNav header nav > ul{display: flex;}
+.regularNav header nav > ul > li{padding: 35px 40px; position: relative; cursor: pointer;}
+.regularNav header nav > ul > li:hover{
+    background: #eee;
+}
+.regularNav header nav > ul > li:after{
+    position: absolute; content: "";
+    width: 100%; height: 5px; background: #f47321;
+    top: 0; left: 0; display: none;
+}
+.regularNav header nav > ul > li:hover:after{
+    display: block;
+}
+.regularNav header nav > ul > li > a{font-size: 14px; color: #000; display: block;}
+.regularNav header nav > ul > li:hover > a{color: #f47321;}
+
+.regularNav header nav > ul > li > ul{
+    margin-top: 30px; text-align: center;
+    display: none;
+}
+.regularNav header nav > ul > li:hover > ul{display: block;}
+.regularNav header nav > ul > li > ul > li{padding: 3px 0;}
+
+.regularNav header nav > ul > li > ul > li > a{font-size: 13px; color: #333;}
+
+.regularNav header nav > ul > li > ul > li > a:hover{color: #f47321;}
+
+.regularNav header .transLenguage{}
+.regularNav header .transLenguage ul{display: flex; padding-top: 30px;}
+.regularNav header .transLenguage ul li{
+    overflow: hidden; margin: 0 5px;
+    background-repeat: no-repeat; background-size: cover;
+}
+.regularNav header .transLenguage ul li a{
+    width: 30px; height: 30px; display: block;
+    background-repeat: no-repeat; 
+}
+.regularNav header .transLenguage ul li:nth-child(1) a{
+    background-image: url(../img/kor_btn.png);
+    background-position: 100% 0;
+}
+.regularNav header .transLenguage ul li:nth-child(1) a:hover{
+    background-position: 0 0;
+}
+.regularNav header .transLenguage ul li:nth-child(2) a{
+    background-image: url(../img/eng_btn.png);
+    background-position: 100% 0;
+}
+.regularNav header .transLenguage ul li:nth-child(2) a:hover{
+    background-position: 0 0;
+}
+.regularNav header .transLenguage ul li:last-child a{
+    margin-top: 5px; margin-left: 10px;
+    width: 20px; height: 20px; display: block;
+    
+    background-image: url(../img/btn-gnbutil.png);
+    background-position: 0 0;
+}
+.regularNav header .transLenguage ul li:last-child a:hover{
+    background-position: 100% 0%;
+}
+
+/***********  HEADER & wideNav  *************/
+.WideNav{
+    width: 100%; 
+    height: 350px; position: absolute;
+    top: 0; left: 0; z-index: 5; background: #fff;
+   
+}
+
+
+.WideNav header{
+    padding: 0 10px; width: 1200px; margin: 0 auto;
+    display: flex; justify-content: space-between; align-items: flex-start;
+}
+.WideNav header .logoSection{padding:20px 0;}
+.WideNav header .logoSection img{
+    display: block; height: 50px;
+}
+.WideNav header nav.WideMenu{}
+.WideNav header nav.WideMenu > ul{
+    display: flex;   overflow: hidden; 
+    padding-top: 11px;
+}
+.WideNav header nav.WideMenu > ul > li{
+    position: relative;
+    line-height: 50px;
+}
+.WideNav header nav.WideMenu > ul > li:after{
+    position: absolute; content: "";
+    width: 200px; height: 1px; background: #ccc;
+    left: 0; bottom: 0;
+}
+.WideNav header nav.WideMenu > ul > li > a{
+    font-size: 13px; padding: 0 5px; color: #666;
+    transition: color 0.5s;
+}
+.WideNav header nav.WideMenu > ul > li:hover > a{
+    color: #f47321;
+}
+.WideNav header nav.WideMenu > ul > li:first-child{
+    width: 150px; 
+} 
+.WideNav header nav.WideMenu > ul > li:first-child a{
+    font-size: 15px; color: #000;position: relative;
+}
+.WideNav header nav.WideMenu > ul > li:first-child a:after{
+    position: absolute; content: "";
+    width: 110px; height: 3px; background: #f47321;
+    left: 0; bottom: -16px;
+}
+.WideNav header nav.WideMenu > ul > li:first-child span{display: none;}
+.WideNav header .closeBtn{}
+.WideNav header .closeBtn ul{}
+.WideNav header .closeBtn ul li{}
+.WideNav header .closeBtn ul li a{
+    margin-top: 35px;
+    width: 20px; height: 20px; display: block;
+    background-repeat: no-repeat; background-size: cover;
+    background-image: url(../img/btn-close.png);
+    background-position: 0 0;
+}
+.WideNav header .closeBtn ul li a:hover{
+    background-position: 0 100%;
+}
+.WideNav header .closeBtn ul li a img{
+
+}   
+
+/***********  FOOTER *************/
+footer{
+    width: 100%; background: #555; height: 200px;
+    position: relative;
+}
+footer .wrap{
+    margin: 0 auto; padding: 0 10px; height: 100%;
+    width: 1200px; display: flex; justify-content: space-between;
+}
+footer .wrap .left_section{display: flex;}
+footer .wrap .left_section .logo{height: 35px; margin-top: 60px;}
+footer .wrap .left_section .logo img{display: block;}
+footer .wrap .left_section .info{color: #fff; padding-left: 30px; margin-top: 60px;}
+footer .wrap .left_section .info > ul{ display: flex; flex-wrap: wrap; justify-content: center;}
+footer .wrap .left_section .info > ul > li{margin-right:15px;}
+footer .wrap .left_section .info > ul > li > a{
+    position: relative; font-size: 14px;
+    color: #fff; font-family: 'Nanum Gothic', sans-serif;
+    position: relative;
+}
+footer .wrap .left_section .info > ul > li > a:after{
+    position: absolute; content: "￨"; padding-top: 3px;
+}
+footer .wrap .left_section .info > ul > li:last-child > a:after{
+    display: none;
+}
+footer .wrap .left_section .info .bottomTxt{padding-top: 20px;}
+footer .wrap .left_section .info .bottomTxt p{font-size: 14px; font-family: 'Nanum Gothic', sans-serif;}
+
+footer .wrap .right_section{margin-top: 64px;}
+footer .wrap .right_section ul{ display: flex;}
+footer .wrap .right_section ul li{
+   width: 30px; height: 30px;
+ overflow: hidden; margin-left:  10px;
+}
+footer .wrap .right_section ul li:last-child{margin-right: 0;}
+footer .wrap .right_section ul li a{display: block; width: 100%; height: 100%;  background-size: cover; }
+footer .wrap .right_section ul li:nth-child(1) a{background-image: url(../img/sns.png); background-position: 0 50%;}
+footer .wrap .right_section ul li:nth-child(2) a{background-position: -30px 50%; background-image: url(../img/sns.png); }
+footer .wrap .right_section ul li:nth-child(3) a{background-position: -60px 50%;background-image: url(../img/sns.png); }
+footer .wrap .right_section ul li:nth-child(4) a{background-position: -90px 50%; background-image: url(../img/sns.png); }
+
+
+
+footer .wrap .right_section .Fsite{
+    cursor: pointer;
+    width: 165px; height: 30px; margin-top: 20px;
+    background-image: url(../img/site_head.jpg);
+    position: relative;
+}
+footer .wrap .right_section .Fsite .pop{
+    position: absolute;bottom: 30px; right: 0;
+    border: 1px solid #333;
+    display: none; opacity: 0; z-index: 10;
+}
+footer .wrap .right_section .Fsite .pop.active{
+    display: block; opacity: 1;
+}
+footer .wrap .right_section .Fsite .pop img{display: block;}
+
+footer .topBtnFixed{position: absolute; top: -60px; right: 5%; cursor: pointer;}
+footer .topBtnFixed img{display: block; height: 40px;}
+
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+    .regularNav {width: 100%;}
+    .regularNav header .logoSection{padding:25px 0;}
+    .regularNav header .logoSection img{display: block; height: 35px;}
+    .regularNav header nav > ul{width: 100%;}
+    .regularNav header nav > ul > li{padding: 35px 10px;}
+    .WideNav{height: 400px;}
+    .WideNav header{width: 100%;}
+    .WideNav header .logoSection{width: 100px;}
+    .WideNav header .logoSection img{ display: block; height: 35px; width: 100%;}
+    .WideNav > header > nav{padding-top: 50px;}
+    .WideNav header .closeBtn{width: 100px;}
+    .WideNav header .closeBtn ul li{display: flex; justify-content: center; }
+    .WideNav header .closeBtn ul li a{margin-top: 25px;}
+    footer .wrap{width: 100%; display: block;}
+    footer .wrap .left_section .info{margin-top: 30px;}
+    footer .topBtnFixed{right: 50%; transform: translateX(50%);}
+    footer .wrap .right_section{display:flex; justify-content: space-between; margin: 20px 20px 0 120px; align-items: center;}
+    footer .wrap .right_section .Fsite{margin-top: 0px;}
+}
+@media(max-width : 767px){ /* 모바일 사이즈 768px */
+    .regularNav header nav{display: none;}
+    .WideNav{height: auto; padding-bottom: 40px;}
+    .WideNav > header > nav{padding-top: 70px;}
+    .WideNav header nav.WideMenu > ul{
+        flex-direction: column;
+    }
+    .WideNav header nav{width:500px;}
+    
+    .WideNav header nav.WideMenu > ul{position: relative; padding-top: 5px;}
+    .WideNav header nav.WideMenu > ul > li:first-child span{display: block;}
+    /* .WideNav header nav.WideMenu > ul:after{
+        position: absolute; content: " ﹢ "; font-size: 25px;
+        right: 10px; top: 20px; color: #f47321; cursor: pointer;
+    } */
+    
+   
+    .WideNav header nav.WideMenu > ul > li.Menu_title{
+        display: block; width: 100%;
+        border-bottom: 2px solid #f47321;
+    }
+    .WideNav header nav.WideMenu > ul > li.Menu_title > a{
+        font-size: 18px;
+    }
+    .WideNav header nav.WideMenu > ul > li{
+        display: none; line-height: 20px;
+    }
+    .WideNav header nav.WideMenu > ul > li.active{
+        display: block;
+    }
+    .WideNav header nav.WideMenu > ul > li:first-child{line-height: 50px; display: flex; justify-content: space-between;}
+    .WideNav header nav.WideMenu > ul > li:first-child span{
+        font-size: 25px; color: #f47321; cursor: pointer; font-weight: lighter;
+    }
+    .WideNav header nav.WideMenu > ul > li:nth-child(2){padding-top: 15px;}
+    .WideNav header nav.WideMenu > ul > li:first-child a:after{
+        display: none;
+    }
+    .WideNav header nav.WideMenu > ul > li:after{
+       display: none;
+    }
+    footer{height: 350px;}
+    footer .wrap {display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    footer .wrap .left_section .logo{margin-top: 0;}
+    footer .wrap .left_section{display: flex; flex-direction: column; align-items: center; justify-content: center;}
+    footer .wrap .right_section{display: block; transform: translateX(-30%);}
+    footer .wrap .right_section ul{margin: 20px 0; width: 100%; flex-wrap: wrap;}
+    footer .wrap .right_section .Fsite{margin-left: 3px;}
+    
+    footer .wrap .left_section .info > ul > li > a:after{display: none;}
+    footer .wrap .left_section .info .bottomTxt{text-align: center;}
+    
+}

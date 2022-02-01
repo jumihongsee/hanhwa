@@ -1,0 +1,84 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Play:wght@400;700&display=swap');
+
+*{box-sizing: border-box;}
+html, body{margin: 0; padding:0;}
+h1, h2, h3, h4, h5, h6, p{margin: 0;}
+ul, ol{margin: 0; padding: 0; list-style: none;}
+a{text-decoration: none;}
+
+.play_font{font-family: 'Play', sans-serif;}
+.nanum_font{font-family: 'Nanum Gothic', sans-serif;}
+
+#topBanner{ width: calc(100% - 50px); margin: 0 auto; height: 320px; background-image: url(../img/prcenter/bg.jpg);
+    background-size: cover; background-position: 50% 50%;}
+#topBanner .wrap{width: 1200px; margin: 0 auto; padding: 0 10px;}
+#topBanner .wrap h3{
+    text-align: center; color: #fff;font-size: 24px; font-weight: bold; text-shadow: 1px 4px 4px rgba(0,0,0,0.6);
+    line-height: 320px;
+}
+
+.guide{width: 1200px; margin: 0 auto; padding: 0 10px; margin-top: 20px; display: flex; justify-content: flex-end; align-items: center;}
+.guide a{font-size: 17px; color: #777;}
+ion-icon {font-size: 15px;}
+.guide a span{color: #555; font-weight: bold;}
+
+#hanhwa_dream{width: 1200px; padding: 100px 10px 150px 10px; margin: 0 auto;display: flex; justify-content: space-between; align-items: flex-start;}
+#hanhwa_dream .left{width: 70%;}
+#hanhwa_dream .left .title{font-size: 30px; color: #333; padding-bottom: 40px;}
+#hanhwa_dream .left .line img{display: block;}
+#hanhwa_dream .left .sub{padding-top: 40px; font-size: 15px;color: #555; line-height: 25px;}
+#hanhwa_dream .right{width: 30%; display: flex; justify-content: center;}
+
+#hanhwa_donation{width: 100%; height: 480px; margin: 0 auto; background-size: cover; background-position: 50% 50%; background-image: url(../img/prcenter/bg2.jpg);}
+#hanhwa_donation .wrap{max-width: 1200px;margin: 0 auto; padding: 0 10px;}
+#hanhwa_donation .wrap .left{width: 40%; position: relative;}
+#hanhwa_donation .wrap .left img{position: absolute; display: block; top: -90px; left: 40px;}
+#hanhwa_donation .wrap .right{width: 100%; padding: 160px 0px 100px 40%; text-align: center;}
+#hanhwa_donation .wrap .right h3{color: #fff; font-size: 25px; padding-bottom: 10px;}
+#hanhwa_donation .wrap .right h2{color: #f47321;; font-size: 40px; padding-bottom: 10px; font-weight: normal;}
+#hanhwa_donation .wrap .right p{color: #fff; font-size: 15px; color: #fff; line-height: 25px;}
+
+#threeSection{
+    width: 1200px; margin: 0 auto;
+    padding: 100px 0;
+}
+#threeSection .cont{display: flex; flex-wrap: wrap; }
+#threeSection .cont .box{width: calc(100% / 3 - 10px);  margin: 0 5px;}
+#threeSection .cont .box h3{font-size: 23px; color: #333; padding-bottom: 20px;}
+#threeSection .cont .box img{display: block;}
+#threeSection .cont .box p{font-size: 15px; line-height: 20px; padding: 20px 0;}
+#threeSection .cont .box img.mainImg{background-size: cover; background-position: 50% 50%; width: 100%;}
+
+@media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
+    #topBanner{ width: 100%;}
+    #topBanner .wrap{width: 100%;}
+    #hanhwa_dream{width: 100%; padding: 100px 40px; position: relative;}
+    #hanhwa_dream .left{width: 100%;}
+    #hanhwa_dream .right{position: absolute; right: -25px; top: 150px;}
+    #hanhwa_dream .right img{height: 80px;}
+
+    #hanhwa_donation{width: 100%; height: 700px;}
+    #hanhwa_donation .wrap .left{width: 100%; position: relative;}
+    #hanhwa_donation .wrap .left img{position: absolute; display: block; top: -60px; left: 50%; transform: translateX(-50%);}
+    #hanhwa_donation .wrap .right{padding: 400px 100px;}
+
+    #threeSection{width: 100%;}
+    #threeSection .cont{padding: 0 30px;}
+    #threeSection .cont .box h3{font-size: 20px;}
+    #threeSection .cont .box p{font-size: 13px;}
+
+}
+@media(max-width : 767px){ /* 모바일 사이즈 768px */
+    #hanhwa_dream .right{position: absolute; right: 50%; top: 40%; transform: translateX(50%);}
+    #hanhwa_dream .right img{height: 180px; filter: opacity(40%);}
+    #hanhwa_dream .left .title {font-size: 20px; line-height: 30px;}
+
+    #hanhwa_donation{width: 100%; height: 550px;}
+    #hanhwa_donation .wrap .left img{height: 270px;}
+    #hanhwa_donation .wrap .right{padding: 240px 50px;}
+
+    #threeSection .cont .box{width: 100%;}
+    #threeSection .cont .box img.mainImg{display: block; height: 250px; padding-bottom: 20px;}
+
+}
