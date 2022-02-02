@@ -17,7 +17,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .company , .WideNav .company ").click(function(){
+    $(".regularMenu .company").click(function(){
         $.ajax({
             url : "./company.html",
             success : function(result){
@@ -28,7 +28,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .business , .WideNav .business ").click(function(){
+    $(".regularMenu .business").click(function(){
         $.ajax({
             url : "./business.html",
             success : function(result){
@@ -39,7 +39,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .pr_center , .WideNav .pr_center ").click(function(){
+    $(".regularMenu .pr_center").click(function(){
         $.ajax({
             url : "./pr_center.html",
             success : function(result){
@@ -50,7 +50,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .careers , .WideNav .careers ").click(function(){
+    $(".regularMenu .careers").click(function(){
         $.ajax({
             url : "./careers.html",
             success : function(result){
@@ -61,7 +61,7 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .customer , .WideNav .customer ").click(function(){
+    $(".regularMenu .customer").click(function(){
         $.ajax({
             url : "./customer.html",
             success : function(result){
