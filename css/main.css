@@ -38,10 +38,13 @@ main .banner ul li .txtPart{
 main .banner ul li .txtPart .title{font-size: 60px; font-weight: normal;}
 main .banner ul li .txtPart h3 span{
     font-size: 25px; font-weight: lighter; display: block;
-
 }
-main .banner ul li.main_slide2 .txtPart h3 span{
+main .banner ul li.main_slide2 .txtPart h3{font-size: 40px;}
+main .banner ul li.main_slide2 .txtPart h2{font-size: 60px; padding-bottom: 10px;}
+
+main .banner ul li.main_slide2 .txtPart span.wh{
     font-size: 25px; font-weight: lighter; display: inline-block;
+    font-weight: normal;
 }
 main .banner ul li .txtPart h2{font-size: 80px; font-weight: normal;}
 main .banner ul li .txtPart .content{
@@ -266,18 +269,20 @@ main #bottom .box .cont:nth-child(4) {display: none;}
 @media(max-width : 767px){ /* 모바일 사이즈 768px */
     
     main .banner{height: 600px;}
-    main .banner ul li .txtPart{width: 100%; padding: 200px 40px;}
+    main .banner ul li .txtPart{width: 100%; padding: 200px 20px;}
     main .banner ul li .txtPart .title{font-size: 50px;}
     main .banner ul li .txtPart h3 span{font-size: 20px;}
-    main .banner ul li.main_slide2 .txtPart h3 span{font-size: 18px;}
-    main .banner ul li.main_slide2 .txtPart h2{font-size: 35px;}
+    main .banner ul li.main_slide2 .txtPart h3{font-size: 30px;}
+    main .banner ul li.main_slide2 .txtPart h2{font-size: 50px; padding-bottom: 10px;}
 
-    main #ourBusiness{width: 100%; padding: 60px 20px 80px;}
+    main #ourBusiness{width: 100%; padding: 60px 10px 80px;}
     main #ourBusiness .box .box_section{width: calc(100% - 20px); margin: 0 10px;}
     main #ourBusiness .title_txt h3{font-size: 35px; padding-bottom: 5px;}
     main #ourBusiness .title_txt p{font-size: 13px;}
     main #ourBusiness .title_txt{padding-bottom: 30px;}
+    
     main #ourBusiness .box .box_section .bottom{height: 80px;}
+    main #ourBusiness .box .box_section .bottom p{line-height: 25px;}
 
     main #moreView .box .cont{width: 50%; height: 200px;}
     main #moreView .box .cont:last-child{display: none;}
@@ -309,11 +314,11 @@ main #bottom .box .cont:nth-child(4) {display: none;}
     
 
 
-    main #bottom .box .cont.social .topBox{height: 180px; }
+    main #bottom .box .cont.social .topBox{height: 150px; }
     main #bottom .box .cont.social .topBox .contBar .txtPart .title{font-size: 19px;}
     main #bottom .box .cont.social .topBox .contBar > img{padding: 35px 0 10px;}
 
-    main #bottom .box .cont.people .topBox{height: 180px; } 
+    main #bottom .box .cont.people .topBox{height: 150px; } 
     main #bottom .box .cont.people .topBox .txtPart .title{font-size: 19px;}
     main #bottom .box .cont.people .topBox > img{padding: 35px 0 10px;}
     main #bottom .box .cont.people .topBox{background-image: none;}
@@ -329,7 +334,7 @@ main #bottom .box .cont:nth-child(4) {display: none;}
     main #bottom .box .cont.information .topBox > div.right_section{
         display: flex; align-items: center; justify-content: center; flex-direction: column; width: 50%;
     }
-
-    main #bottom .box .cont .bottomBox{margin-top: 15px;}
+    main #bottom .box .cont .bottomBox{height: 45px; margin-top: 10px;}
+    main #bottom .box .cont .bottomBox h3{font-size: 14px; line-height: 45px; }
 
 }

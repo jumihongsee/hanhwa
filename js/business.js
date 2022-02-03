@@ -50,7 +50,7 @@ $(document).ready(function(){
      for(i in facilityArr){
          $("#facility .cont").append(`
             <div class="box" style="background-image: url(./img/business/${facilityArr[i][1]});">
-                <h2 class="title nanum_font">${facilityArr[i][0]}<span>${facilityArr[i][2]}</span></h2>
+                <div class="title nanum_font"><h2>${facilityArr[i][0]}</h2><span>${facilityArr[i][2]}</span></div>
                 <p class="sub nanum_font">${facilityArr[i][3]}</p>
             </div>
          `);

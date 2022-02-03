@@ -69,20 +69,22 @@ ion-icon {font-size: 15px;}
 }
 #facility .wrap .cont .box .title{
     font-size: 30px; color: #f47321; border-bottom: 1px solid #ccc;
-    padding: 15px; 
+    padding: 15px; text-align: center; display: flex; align-items: center;
+    justify-content: center; position: relative;
 }
-#facility .wrap .cont .box .title span{font-size: 25px;padding-left: 80px;}
-#facility .wrap .cont .box:nth-child(3) .title span{padding-left: 60px;}
-#facility .wrap .cont .box:nth-child(4) .title span{padding-left: 60px;}
+#facility .wrap .cont .box .title h2{position: absolute; left: 10px; font-size: 30px; }
+#facility .wrap .cont .box .title span{font-size: 25px; font-weight: bold;}
+#facility .wrap .cont .box:nth-child(3) .title span{}
+#facility .wrap .cont .box:nth-child(4) .title span{}
 #facility .wrap .cont .box p.sub{
-    padding: 20px 80px; font-size: 14px; color: #333; text-align: center;
+    padding: 20px 60px; font-size: 14px; color: #333; text-align: center;
 }
 
 @media(max-width : 1023px){ /* 테블릿 사이즈 1024px  */
     #topBanner{ width: 100%}
-    #topBanner .wrap{width: calc(100% - 100px);}
+    #topBanner .wrap{width: calc(100% - 100px); height: 150px;}
     .guide{width: calc(100% - 100px);}
-    #middle_txt{ width: 100%}
+    #middle_txt{ width: 100%; padding: 0 60px 100px 60px;}
     #project{width: calc(100% - 100px);}
     #project #pjBanner{ height: 510px;}
     #project #pjBanner .img_section{height: 430px;}
@@ -90,29 +92,45 @@ ion-icon {font-size: 15px;}
     #project #pjBanner .txt_section .moreBtn{position: absolute; right: 0; bottom: 105px;}
     #facility .wrap{width: calc(100% - 100px);  padding: 20px 0px 100px 0px;}
     #facility .wrap .cont .box{width: calc(100% / 2 - 20px);}
+    #facility .wrap .cont .box p.sub {padding: 20px;}
 }
 @media(max-width : 767px){ /* 모바일 사이즈 1024px  */
-    #topBanner .wrap{width: calc(100% - 80px);}
-    .guide{width: calc(100% - 80px);}
-    #middle_txt{ width: 100%}
-    #middle_txt{margin: 0 auto; padding: 0 40px 100px 40px; text-align: center;}  
-    #project{width: calc(100% - 80px);}
-    #project #pjBanner{ height: 500px;}
+    #topBanner{height: 230px;}
+    #topBanner .wrap{width: calc(100% - 20px);}
+    #topBanner .wrap img{height: 40px;}
+    #topBanner .wrap > h3{font-size: 20px;}
+    #topBanner .wrap > h3 > span{font-size: 20px;}
+    #topBanner .wrap > p{font-size: 15px;}
+
+    .guide{display: none;}
+    #middle_txt p{margin-top: 200px; }
+    #middle_txt{width: 100%; margin: 0 auto; padding: 0 20px 100px 20px; text-align: center;}  
+    #project{width: calc(100% - 20px);}
+
+    #project #pjBanner{ height: 530px; padding-bottom: 200px;}
     #project #pjBanner .img_section{height: 330px; flex-direction: column;}
     #project #pjBanner .txt_section {flex-direction: column;} 
-    #project #pjBanner .txt_section ul{flex-direction: column;}
+    #project #pjBanner .txt_section li.title{padding-bottom: 10px;}
+    #project #pjBanner .txt_section ul{flex-direction: column; padding-bottom: 10px;}
     #project #pjBanner .txt_section ul li.none{display: none;}
-    #project #pjBanner .txt_section ul > .bottom{display: block; display: flex; align-items: center;}
-    #project #pjBanner .txt_section ul > .bottom > li{font-family: 'Nanum Gothic', sans-serif;font-weight: bold; padding: 10px 10px 20px 10px;}
+    #project #pjBanner .txt_section ul > .bottom{
+        display: block; display: flex; align-items: center; flex-direction: row; flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #project #pjBanner .slide1 .txt_section ul > .bottom li:first-child{width: 100%;}
+    #project #pjBanner .txt_section ul > .bottom li{font-size: 14px; width: 50%; text-align: center; vertical-align: top;}
+    #project #pjBanner .txt_section ul > .bottom > li{
+        font-family: 'Nanum Gothic', sans-serif;font-weight: bold; padding: 5px 10px;
+    }
     #project #pjBanner .txt_section ul > .bottom > li > span{font-weight: normal; padding-left: 5px;}
-    #project #pjBanner .txt_section .moreBtn{position: static;}
+    #project #pjBanner .txt_section .moreBtn{position: static; padding-bottom: 20px;}
 
     #project #pjBanner .slideBtn > li:first-child{position: absolute; top: 50%; left: 0; transform: translateY(-120%);}
     #project #pjBanner .slideBtn > li:last-child{position: absolute; top: 50%; right: 0; transform: translateY(-120%);}
 
-    #facility .wrap{padding: 0px 10px 100px 10px;}
+    #facility .wrap{padding: 0px 0px 100px 0px; width: calc(100% - 20px); }
     #facility .wrap .cont .box{width: 100%;}
-    #facility .wrap .cont .box .title span{font-size: 25px;padding-left: 180px;}
-    #facility .wrap .cont .box:nth-child(3) .title span{padding-left: 150px;}
-    #facility .wrap .cont .box:nth-child(4) .title span{padding-left: 150px;}
+    
+
+  
 }

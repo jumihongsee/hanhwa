@@ -17,56 +17,61 @@ $(document).ready(function(){
         return false;
     });
 
-    $(".regularMenu .company").click(function(){
+    $(".regularMenu .company , .WideNav .company").click(function(){
         $.ajax({
             url : "./company.html",
             success : function(result){
                 console.log(result);
                 $("main").html(result);
+                $(".WideNav").hide();
             }
         });
         return false;
     });
 
-    $(".regularMenu .business").click(function(){
+    $(".regularMenu .business , .WideNav .business").click(function(){
         $.ajax({
             url : "./business.html",
             success : function(result){
                 console.log(result);
                 $("main").html(result);
+                $(".WideNav").hide();
             }
         });
         return false;
     });
 
-    $(".regularMenu .pr_center").click(function(){
+    $(".regularMenu .pr_center , .WideNav .pr_center").click(function(){
         $.ajax({
             url : "./pr_center.html",
             success : function(result){
                 console.log(result);
                 $("main").html(result);
+                $(".WideNav").hide();
             }
         });
         return false;
     });
 
-    $(".regularMenu .careers").click(function(){
+    $(".regularMenu .careers , .WideNav .careers").click(function(){
         $.ajax({
             url : "./careers.html",
             success : function(result){
                 console.log(result);
                 $("main").html(result);
+                $(".WideNav").hide();
             }
         });
         return false;
     });
 
-    $(".regularMenu .customer").click(function(){
+    $(".regularMenu .customer , .WideNav .customer").click(function(){
         $.ajax({
             url : "./customer.html",
             success : function(result){
                 console.log(result);
                 $("main").html(result);
+                $(".WideNav").hide();
             }
         });
         return false;
