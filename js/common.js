@@ -95,8 +95,10 @@ $(document).ready(function(){
 
         if($active == false){
             $(".Fsite .pop").addClass("active");
+            $("footer .topBtnFixed").css("z-index","-1");
         }else{
             $(".Fsite .pop").removeClass("active");
+            $("footer .topBtnFixed").css("z-index","1");
         }
     });  
 

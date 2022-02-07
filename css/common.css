@@ -287,5 +287,7 @@ footer .topBtnFixed img{display: block; height: 40px;}
     
     footer .wrap .left_section .info > ul > li > a:after{display: none;}
     footer .wrap .left_section .info .bottomTxt{text-align: center;}
-    
+
+ 
+    footer .wrap .right_section .Fsite .pop{right: -34%;}
 }
